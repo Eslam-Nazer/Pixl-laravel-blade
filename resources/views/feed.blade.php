@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="PIXL - Feed">
 
     @include('partails.navigation')
 

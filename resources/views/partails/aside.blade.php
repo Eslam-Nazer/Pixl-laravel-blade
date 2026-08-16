@@ -9,75 +9,8 @@
     />
     <hr class="border-pixl-light/10 mt-2 border"/>
     <!-- Artists to follow -->
-    <div class="border-pixl-light/10 mt-10 border p-4">
-        <h2 class="text-pixl-light/60 text-sm">Artists to Follow</h2>
+    <x-artists-to-follow />
 
-        <ol class="mt-4 flex flex-col gap-4">
-            <li class="flex items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img
-                        class="size-8 object-cover"
-                        src="/images/alessia.png"
-                        alt="Avatar of Alessia"
-                    />
-                    <p class="truncate text-sm">alessia_draws</p>
-                </div>
-                <button
-                    class="bg-pixl-dark/50 hover:bg-pixl-dark/60 text-pixl border-pixl/50 hover:border-pixl/60 border px-2 py-1 text-sm transition-colors"
-                >
-                    Follow
-                </button>
-            </li>
-            <li class="flex items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img
-                        class="size-8 object-cover"
-                        src="/images/anne.png"
-                        alt="Avatar of Anne"
-                    />
-                    <p class="truncate text-sm">just_anne</p>
-                </div>
-                <button
-                    class="bg-pixl-dark/50 hover:bg-pixl-dark/60 text-pixl border-pixl/50 hover:border-pixl/60 border px-2 py-1 text-sm transition-colors"
-                >
-                    Follow
-                </button>
-            </li>
-            <li class="flex items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img
-                        class="size-8 object-cover"
-                        src="/images/mr-anderson.png"
-                        alt="Avatar of Anderson"
-                    />
-                    <p class="truncate text-sm">Mr. Anderson</p>
-                </div>
-                <button
-                    class="bg-pixl-dark/50 hover:bg-pixl-dark/60 text-pixl border-pixl/50 hover:border-pixl/60 border px-2 py-1 text-sm transition-colors"
-                >
-                    Follow
-                </button>
-            </li>
-            <li class="flex items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                    <img
-                        class="size-8 object-cover"
-                        src="/images/michael.png"
-                        alt="Avatar of michael"
-                    />
-                    <p class="truncate text-sm">Michael</p>
-                </div>
-                <button
-                    class="bg-pixl-dark/50 hover:bg-pixl-dark/60 text-pixl border-pixl/50 hover:border-pixl/60 border px-2 py-1 text-sm transition-colors"
-                >
-                    Follow
-                </button>
-            </li>
-        </ol>
-        <a href="#" class="text-pixl-light/60 mt-4 inline-block text-sm"
-        >Show more</a
-        >
-    </div>
     <!-- Follow idea streams -->
     <div class="border-pixl-light/10 mt-4 border p-4">
         <h2 class="text-pixl-light/60 text-sm">Follow Idea Streams</h2>
