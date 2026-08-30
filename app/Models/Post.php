@@ -33,4 +33,9 @@ class Post extends Model
     {
         return $this->hasMany(Like::class, 'post_id');
     }
+
+    public function reposts(): HasMany
+    {
+        return $this->hasMany(Post::class, 'repost_of_id');
+    }
 }
