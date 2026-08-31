@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-#[Fillable(['profile_id', 'parent_id', 'repost_of_id','content',])]
+#[Fillable(['profile_id', 'parent_id', 'repost_of_id', 'content',])]
 class Post extends Model
 {
     /** @use HasFactory<\Database\Factories\PostFactory> */
@@ -45,6 +45,16 @@ class Post extends Model
             'profile_id' => $profile->id,
             'content' => $content,
             'parent_id' => null,
+            'repost_of_id' => null,
+        ]);
+    }
+
+    public static function reply(Profile $profile, Post $original, string $content): self
+    {
+        return static::create([
+            'profile_id' => $profile->id,
+            'content' => $content,
+            'parent_id' => $original->id,
             'repost_of_id' => null,
         ]);
     }
